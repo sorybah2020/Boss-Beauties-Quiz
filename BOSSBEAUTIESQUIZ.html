@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss Beauties Quiz</title>
+  <style>
+    body {
+      font-family: 'Wulkan Display Black', sans-serif;
+      background-color: #ED008C;
+      /* Pink background color */
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .quiz-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      font-family: 'Wulkan Display Black', sans-serif;
+      /* Cursive font for headers */
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #ED008C;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #C10674;
+    }
+
+    .result {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* New styles for the top left text */
+    .top-left-text {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-family: 'Wulkan Display Black', sans-serif;
+      /* Cursive font for top left text */
+      display: flex;
+      align-items: center;
+    }
+
+    .top-left-text img {
+      margin-right: 10px;
+      width: 200px; /* Adjust as needed */
+      height: auto;
+    }
+
+    button#shareButton {
+      background-color: #ED008C;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    button#shareButton:hover {
+      background-color: #C10674;
+    }
+
+    #signupForm {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #emailInput {
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    #signupButton {
+      background-color: #ED008C;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #signupButton:hover {
+      background-color: #C10674;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="top-left-text">
+    <img src="BossBeauties_Logo_Black.png" alt="Boss Beauties Logo">
+
+  </div>
+
+    <div class="quiz-container">
+    <h1>What is Your Role in the Boss Beauties World?</h1>
+
+ <div class="question">
+  <h2>What do you like to do for fun?</h2>
+  <div class="options">
+    <label><input type="radio" name="q1" value="CEO">Watching television, I am a binger. 😏</label>
+    <label><input type="radio" name="q1" value="Caregiver">Reading a book. 🎓</label>     
+    <label><input type="radio" name="q1" value="athlete">Working out, exercise, sports!</label>
+    <label><input type="radio" name="q1" value="Superhero">Volunteering in my community <3 </label>
+    <label><input type="radio" name="q1" value="pilot"> Playing video games, duh 🎮 </label>
+
+  </div>
+</div>
+
+<div class="question">
+  <h2>Where would you want to travel to?</h2>
+  <div class="options">
+    <label><input type="radio" name="q2" value="athlete">The Caribbean Islands</label>
+    <label><input type="radio" name="q2" value="Superhero">Switzerland</label>
+    <label><input type="radio" name="q2" value="CEO">Japan</label>
+    <label><input type="radio" name="q2" value="Caregiver">Egypt</label>
+    <label><input type="radio" name="q2" value="pilot">Australia</label>
+  </div>
+</div>
+
+<div class="question">
+  <h2>What is your favorite color?</h2>
+  <div class="options">
+    <label><input type="radio" name="q3" value="CEO">Pink</label>
+    <label><input type="radio" name="q3" value="Superhero">Blue</label>
+    <label><input type="radio" name="q3" value="athlete">Yellow</label>
+     <label><input type="radio" name="q3" value="pilot">Black</label>
+    <label><input type="radio" name="q3" value="Caregiver">Red</label>
+              
+             
+  
+  </div>
+</div>
+
+<div class="question">
+  <h2>How would your friends describe you?</h2>
+  <div class="options">
+    <label><input type="radio" name="q4" value="pilot">Smart, of course! </label>
+    <label><input type="radio" name="q4" value="CEO">A kind heart <3</label>
+    <label><input type="radio" name="q4" value="Superhero">Hard-Working</label>
+    <label><input type="radio" name="q4" value="athlete">Strong  💪 </label>
+    <label><input type="radio" name="q4" value="Caregiver"> Funny, heehee.  💪 </label>
+  </div>
+</div>
+
+<div class="question">
+  <h2>What type of sport do you play?</h2>
+  <div class="options">
+    <label><input type="radio" name="q5" value="athlete">Track and Field</label>
+    <label><input type="radio" name="q5" value="CEO">Swimming</label>
+    <label><input type="radio" name="q5" value="Superhero">Basketball</label>
+    <label><input type="radio" name="q5" value="Caregiver">None, unless eating counts.  🤤</label>
+  </div>
+</div>
+
+<div class="question">
+  <h2>What type of learner are you? </h2>
+  <div class="options">
+    <label><input type="radio" name="q6" value="Superhero">I am an academic weapon!</label>
+    <label><input type="radio" name="q6" value="pilot">I enjoy learning. 👌</label>
+    <label><input type="radio" name="q6" value="Caregiver">Learning new things is alright, I’m just trying to survive.</label>
+    <label><input type="radio" name="q6" value="athlete">I skipped school often, oops!</label>
+  </div>
+</div>
+
+<div class="question">
+  <h2>What is a career you might be interested in?</h2>
+  <div class="options">
+    <label><input type="radio" name="q7" value="Superhero">Being an investor, 📈</label>
+    <label><input type="radio" name="q7" value="CEO">Being a CEO!</label>
+    <label><input type="radio" name="q7" value="Caregiver">Being a software engineer, of course. </label>
+    <label><input type="radio" name="q7" value="athlete">Being an Athlete. </label>
+  </div>
+</div>
+
+<div class="question">
+  <h2>What type of pet would you get?</h2>
+  <div class="options">
+    <label><input type="radio" name="q8" value="CEO">A Cat 🐈</label>
+    <label><input type="radio" name="q8" value="athlete"> A Panther 🐆  </label>
+    <label><input type="radio" name="q8" value="Superhero"> A Hawk 🦅 </label>
+    <label><input type="radio" name="q8" value="caregiver">A Dog 🐶 </label>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- Add more questions as needed -->
+
+    <button onclick="showResult()">Submit</button>
+    <button id="regenerateButton" style="display: none;">Regenerate</button>
+
+    <!-- Share button -->
+  <div>
+    <button id="shareButton" onclick="shareResult()" style="display: none;">Share Result</button>
+  </div>
+   <div id="signupForm">
+        <label for="emailInput">Enter your email to sign up for updates:</label>
+        <input type="email" id="emailInput" placeholder="Your email">
+        <button id="signupButton" onclick="signup()">Sign Up</button>
+  </div>
+
+  <div id="result" class="result"></div>
+
+  <script>
+   function showResult() {
+  const resultContainer = document.getElementById('result');
+  const questions = document.querySelectorAll('.question');
+  const princesses = {
+    CEO: {
+      name: 'You are The CEO!',
+      description: 'You are quite popular amongst your crowd! You stand out in a sea of people and know when to take initiative. Even when you take control and create demands, you know how to treat others with kindness and genuinity. You know to believe in yourself and demonstrate confidence. And always remember that you can be everything and anything else you want to be. Lead the way, BB.',
+      images: ['FutureCEO.jpg'] // Replace with actual image file names
+    },
+    Superhero: {
+      name: 'You are The Superhero!',
+      description: 'You put the "beauty", "brains", and "bravery" together! You are an excellent thinker who can come up with creative ideas and conjure up admirable innovations like it is nothing. When problems arise, you know how to solve them and keep everyone on task. And always remember that you can be everything and anything else you want to be. Keep brainstorming, BB.',
+      images: ['Superhero.jpg'] // Replace with actual image file names
+    },
+    athlete: {
+      name: 'You are the Tennis Player (Athlete)!',
+      description: 'You are quick, strong, and fiercely competitive; however, you remain humble and are always cheering on and helping your teammates. Your muscles may be big, but your heart is bigger! And always remember that you can be everything and anything else you want to be. Keep working, BB.',
+      images: ['Tennisplayer.jpg'] // Replace with actual image file names
+    },
+    Caregiver: {
+      name: 'You are the Caregiver!',
+      description: 'You love to help others! Whether this includes parenting, babysitting, helping patients in a hospital environment, or even teaching students a new concept in class, you take a responsibility to nurture those in need. You are the person that people can put their whole trust into and that is an important role, BB! ',
+      images: ['Caregiver.jpg'] // Replace with actual image file names
+    },
+    pilot:{
+        name: 'You are the Pilot!',
+        description: 'You are ready to take flight! You are strong, professional, and smart, and probably an expert in video games. You can work with a ton of equipment and pick up on rules quite quickly. You probably love traveling and/or taking long naps. But most importantly, you are brave and confident and that is what makes you a role model to others. And always remember that you can be everything and anything else you want to be. Keep soaring, BB. ',
+        images: ['Pilot.jpg'] // Replace with actual image file names
+      }
+
+  
+    // Add more princesses as needed
+  };
+
+  let princessVotes = {};
+
+  questions.forEach((question) => {
+    const selectedOption = question.querySelector('input[type="radio"]:checked');
+    if (selectedOption) {
+      const answer = selectedOption.value;
+      princessVotes[answer] = (princessVotes[answer] || 0) + 1;
+    }
+  });
+
+  const result = Object.entries(princessVotes).reduce((prev, [answer, votes]) => {
+    return votes > (prev.votes || 0) ? { answer, votes } : prev;
+  }, {});
+
+  if (result.answer) {
+    const princessResult = princesses[result.answer];
+    resultContainer.innerHTML = `
+      <h2>${princessResult.name}!</h2>
+      ${princessResult.images.map(image => `<img src="${image}" alt="${princessResult.name}">`).join('')}
+      <p>${princessResult.description}</p>`;
+
+    // Show the regenerate button
+    const regenerateButton = document.getElementById('regenerateButton');
+    regenerateButton.style.display = 'block';
+    regenerateButton.onclick = function () {
+      // Reset quiz state
+      resultContainer.innerHTML = '';
+      regenerateButton.style.display = 'none';
+      questions.forEach((question) => {
+        const radioButtons = question.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach((radioButton) => {
+          radioButton.checked = false;
+        });
+      });
+    };
+  } else {
+    resultContainer.innerHTML = '<h2>Please answer all questions!</h2>';
+  }
+}
+
+
+  function shareResult() {
+    const resultContainer = document.getElementById('result');
+  const princessResult = resultContainer.querySelector('h2').textContent;
+    const princessDescription = resultContainer.querySelector('p').textContent;
+
+    if (navigator.share) {
+     navigator.share({
+        title: 'Boss Beauties Quiz Result',
+        text: `I got ${princessResult} from the Boss Beauties Quiz! ${princessDescription}`,
+      })
+        .then(() => console.log('Shared successfully'))
+        .catch((error) => console.error('Error sharing:', error));
+       } else {
+      // Fallback for browsers that do not support Web Share API
+      const shareFallbackText = `I got ${princessResult} from the Boss Beauties Quiz   ${princessDescription}`;
+      const shareFallbackInput = document.createElement('input');
+      shareFallbackInput.setAttribute('type', 'text');
+    shareFallbackInput.setAttribute('value', shareFallbackText);
+      document.body.appendChild(shareFallbackInput);
+        shareFallbackInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(shareFallbackInput);
+        alert('Result copied to clipboard. You can manually share your result.');
+  }
+}
+    function signup() {
+      // Get the user's email from the input field
+      const userEmail = document.getElementById('emailInput').value;
+
+      // Perform any additional actions (e.g., send the email to your server, etc.)
+      // For demonstration purposes, you can log the email to the console
+      console.log(`User signed up with email: ${userEmail}`);
+
+      // Optionally, you can clear the input field after signup
+      document.getElementById('emailInput').value = '';
+    }
+
+  </script>
+
+</body>
+
+</html>
